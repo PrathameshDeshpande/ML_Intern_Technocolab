@@ -1,4 +1,5 @@
 import pandas as pd
+import xgboost
 import csv
 from sklearn.model_selection import train_test_split
 
@@ -9,5 +10,4 @@ y = pd.DataFrame(y)
 x_train, x_test, y_train, y_test = train_test_split(x, y,
                                                     stratify=y,
                                                     test_size=0.20)
-
 
