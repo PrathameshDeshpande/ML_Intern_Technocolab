@@ -23,8 +23,8 @@ def _max_width_():
 #_max_width_()
 @st.cache(suppress_st_warning=True)
 def main():
-    get_data()
-def get_data():
+    runApp()
+def runApp():
     df = pd.read_csv("C:/Users/91797/Desktop/ML_Intern_Technocolab/Mini_Project/data.csv")
     x = df.drop(["name","status"],axis=1)
     y = df["status"]
