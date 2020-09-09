@@ -7,9 +7,7 @@
  
 ## <div align="center" >:point_down::point_down:What And How XGBoost Works</div>
 **:star2::star2:XGboost Stand's For Extreme Boosting Algorithm Which Is a Optimized Version of Sklearn's Gradient Boosting Algorithm. Its A Boosting Algorithms Which Trains Pedictors Sequentially Where Each Successor Being Trained On Its Residual Error.XGBoost Can be Used For Regression As Well As classification Task.It Was initially Developed By Chen As a Part Of DMDL.XGBoost Is Extremly Fast,Scalable And Protable:star2::star2:**
-<p>
-  <br />
-  </p>
+
 ## ✨ 🐉LIBRARIES USED🐉 ✨
 
 * **XGBOOST**
