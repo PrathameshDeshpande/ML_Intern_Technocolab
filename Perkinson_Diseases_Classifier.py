@@ -25,8 +25,8 @@ def main():
     runApp()
 def runApp():
     url = 'https://raw.githubusercontent.com/PrathameshDeshpande/ML_Intern_Technocolab/master/Mini_Project/data.csv'
-    df = pd.read_csv(url, index_col=0)
-    x = df.drop(["name","status"],axis=1)
+    df = pd.read_csv(url)
+    x = df.drop(["NAME","status"],axis=1)
     y = df["status"]
     y = pd.DataFrame(y)
     x_train, x_test, y_train, y_test = train_test_split(x, y,
