@@ -24,7 +24,8 @@ def _max_width_():
 def main():
     runApp()
 def runApp():
-    df = pd.read_csv("C:/Users/91797/Desktop/ML_Intern_Technocolab/Mini_Project/data.csv")
+    url = 'https://raw.githubusercontent.com/PrathameshDeshpande/ML_Intern_Technocolab/master/Mini_Project/data.csv'
+    df = pd.read_csv(url, index_col=0)
     x = df.drop(["name","status"],axis=1)
     y = df["status"]
     y = pd.DataFrame(y)
