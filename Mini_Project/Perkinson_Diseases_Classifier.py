@@ -2,7 +2,7 @@ import pandas as pd
 from xgboost import XGBClassifier,plot_importance
 import csv
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score,roc_curve, auc
+from sklearn.metrics import accuracy_score,roc_curve, auc,confusion_matrix
 import plotly.express as px
 import streamlit as st
 import matplotlib.pyplot as plt
@@ -20,7 +20,7 @@ def _max_width_():
     """,
         unsafe_allow_html=True,
     )
-_max_width_()
+#_max_width_()
 @st.cache(suppress_st_warning=True)
 def main():
     get_data()
@@ -30,6 +30,7 @@ def get_data():
     y = df["status"]
     y = pd.DataFrame(y)
     x_train, x_test, y_train, y_test = train_test_split(x, y,
+                                                    stratify=y,
                                                     test_size=0.20)
     st.write("# PERKINSON DATASET USED👇👇")
     st.dataframe(data=df,width=None, height=500)
@@ -38,6 +39,7 @@ def get_data():
     y_pred = XGBC.predict(x_test)
     y_pred = pd.DataFrame(y_pred)
     accuracy = accuracy_score(y_test, y_pred)
+    accuracy = float("%0.4f" % (accuracy))
     st.title("VISUALISATION👇👇")
     fpr, tpr, thresholds = roc_curve(y_test, y_pred)
     fig = px.area(
@@ -53,7 +55,7 @@ def get_data():
     fig.update_yaxes(scaleanchor="x", scaleratio=1)
     fig.update_xaxes(constrain='domain')
     fig.update_layout(autosize=False,
-                  width=1400, height=700,xaxis_title="TIME",
+                  width=700, height=700,xaxis_title="TIME",
                   yaxis_title="PRICE",
                   legend_title="Legend Title",
                   font=dict(
@@ -62,6 +64,12 @@ def get_data():
                   color="RebeccaPurple"),
                   margin=dict(l=40, r=40, b=40, t=40))
     st.plotly_chart(fig)
+    cm = confusion_matrix(y_test, y_pred)
+    plt.matshow(cm)
+    plt.title('Confusion matrix of the classifier')
+    plt.colorbar()
+    #plt.plot(figsize=(5, 5))
+    st.pyplot(use_container_width=True)
     st.write("# ACCURACY ACHIEVED👉",accuracy)
 if __name__ == "__main__":
     main()
