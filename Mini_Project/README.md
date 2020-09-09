@@ -6,9 +6,9 @@
 <p><img align="Center" width="1000" height="1500" src="https://github.com/PrathameshDeshpande/ML_Intern_Technocolab/blob/master/screencapture-localhost-8501-2020-09-09-10_08_34.png"</p>
  
 ## <div align="center" >:point_down::point_down:What And How XGBoost Works</div>
-**:star2::star2:XGboost Stand's For Extreme Boosting Algorithm Which Is a Optimized Version of Sklearn's Gradient Boosting Algorithm. Its A Boosting Algorithms Which Trains Pedictors Sequentially Where Each Successor Being Trained On Its Residual Error.XGBoost Can be Used For Regression As Well As classification Task.It Was initially Developed By Chen As a Part Of DMDL.XGBoost Is Extremly Fast,Scalable And Protable:star2::star2:**
+**:star2::star2:XGboost Stand's For Extreme Boosting Algorithm Which Is a Optimized Version of Sklearn's Gradient Boosting Algorithm. Its A Boosting Algorithms Which Trains Pedictors Sequentially, Where Each Successor Is Being Trained On Its Residual Error. XGBoost Can be Used For Regression As Well As classification Task. It Was Initially Developed By Chen As a Part Of DMDL. XGBoost Is Extremly Fast,Scalable And Protable. XGboost Is Often An Important Component Of The Winning Entries In ML Competitions:star2::star2:**
 
-## ✨ 🐉LIBRARIES USED🐉 ✨
+## <div align="center" >:point_down::point_down:✨ 🐉LIBRARIES USED🐉 ✨</div>
 
 * **XGBOOST**
 * **STREAMLIT**
