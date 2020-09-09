@@ -7,7 +7,7 @@ import plotly.express as px
 import streamlit as st
 import matplotlib.pyplot as plt
 import plotly.graph_objects as go
-st.markdown("<h1 style='text-align: center; color: black;'>XGBoost On Perkinson Data</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: black;'>🌟XGBoost On Perkinson Data🌟</h1>", unsafe_allow_html=True)
 def _max_width_():
     max_width_str = f"max-width: 2000px;"
     st.markdown(
@@ -30,16 +30,15 @@ def get_data():
     y = df["status"]
     y = pd.DataFrame(y)
     x_train, x_test, y_train, y_test = train_test_split(x, y,
-                                                    stratify=y,
                                                     test_size=0.20)
-    st.write("# PERKINSON DATASET USED")
+    st.write("# PERKINSON DATASET USED👇👇")
     st.dataframe(data=df,width=None, height=500)
     XGBC = XGBClassifier()
     XGBC.fit(x_train,y_train)
     y_pred = XGBC.predict(x_test)
     y_pred = pd.DataFrame(y_pred)
     accuracy = accuracy_score(y_test, y_pred)
-    st.title("VISUALISATION")
+    st.title("VISUALISATION👇👇")
     fpr, tpr, thresholds = roc_curve(y_test, y_pred)
     fig = px.area(
     x=fpr, y=tpr,
@@ -63,6 +62,6 @@ def get_data():
                   color="RebeccaPurple"),
                   margin=dict(l=40, r=40, b=40, t=40))
     st.plotly_chart(fig)
-    st.write("# ACCURACY ACHIEVED",accuracy)
+    st.write("# ACCURACY ACHIEVED👉",accuracy)
 if __name__ == "__main__":
     main()
