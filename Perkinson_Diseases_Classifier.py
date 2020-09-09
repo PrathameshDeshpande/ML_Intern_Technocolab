@@ -1,6 +1,5 @@
 import pandas as pd
 from xgboost import XGBClassifier,plot_importance
-import csv
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score,roc_curve, auc,confusion_matrix
 import plotly.express as px
