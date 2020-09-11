@@ -16,9 +16,10 @@
 * **PLOTLY**
 * **MATPLOTLIB**
 ```
-🔨FURTHER FINISHING WILL BE DONE BEFORE DEPLOYING THIS WEBAPP🔧
+🔨Mini Project Has Been Deployed🔧
 ```
 ```
 🤩🤩SO,STAY TUNED🤩🤩
 ```
+## <div align="center" >It's LIVE🤩👉👾 https://perkinson-classifier.herokuapp.com 👾</div>
 ## <div align="center" >💖💖💖💖💖THANK YOU☄️☄️HAPPY CODING💖💖💖💖💖</div>
