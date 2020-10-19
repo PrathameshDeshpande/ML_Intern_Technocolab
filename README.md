@@ -5,7 +5,7 @@
 * **Main Project Has Been Completed And Deployed Through Heroku**
 * **👾  https://credit-card-defaulter-check.herokuapp.com/  👾**
 
-# Main Project Sample
+# Main Project Samples
 <p>
 <img align="center" width="1200" height="2000" src="https://github.com/PrathameshDeshpande/ML_Intern_Technocolab/blob/master/screencapture-credit-card-defaulter-check-herokuapp-2020-10-01-21_43_20.png">
 </p>
